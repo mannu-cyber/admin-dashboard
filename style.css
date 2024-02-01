@@ -198,21 +198,20 @@ min-height: 50%;
 .review-section .card{
     width: 275px;
     height: 90px;
-    /* background-color: red; */
     border-radius: 10px;
+    display: flex;
+    justify-content:space-between;
+    overflow: hidden;
+    height: 80px;
+    align-items: center;
+    text-decoration: none;
+    color: white;
 }
 .icon img{
     height:40px ;
 }
 
-.hero .card{
-    display: flex;
-    justify-content: space-around;
-    overflow: hidden;
-    height: 80px;
-    align-items: center;
-    text-decoration: none;
-}
+
 
 .review-section .massages{
     background-color: #007BFF;

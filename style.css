@@ -1,3 +1,8 @@
+@font-face {
+    font-family: a;
+    src: url(./fa-regular-400.woff2);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -8,6 +13,10 @@ html, body{
     height: 100%;
 }
 
+.main{
+    overflow-x: hidden;
+}
+
 nav{
     width: 100vw;
     padding: 1vw 2vw;
@@ -15,6 +24,12 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    -webkit-box-shadow: 1px 8px 5px 0px rgba(78,77,82,0.63);
+    -moz-box-shadow: 1px 8px 5px 0px rgba(78,77,82,0.63);
+    box-shadow: 0px 5px 2px 0px rgb(13, 13, 13);
 }
 
 i:hover{
@@ -59,6 +74,11 @@ i:hover{
 .right i{
     font-size: 20px;
     color: #971814;
+
+}
+
+.right i:hover{
+    scale: 0.90;
 }
 
 .round{
@@ -69,4 +89,174 @@ i:hover{
     align-items: center;
     border-radius: 50%;
     border: 1px solid wheat;overflow: hidden;
+    cursor: pointer;
+}
+
+
+.wraper{
+    margin-top: 4.4vw;
+  width: 100vw;
+    display: flex;
+    
+
+}
+
+aside{
+    width: 250px;
+    min-height: 100vh;
+    background-color: black;
+    /* margin-top: 4.2vw; */
+    display: flex;
+    flex-direction: column;
+    padding:0vw 0vw;
+    gap: 7px;
+}
+
+aside a{
+    display: block;
+    font-size: 1vw;
+    text-decoration: none;
+    color: white;
+    padding: .8vw 1.5vw;
+    font-family: Work Sans, sans-serif;
+    transition: .2s;
+    
+}
+
+.active{
+    background-color: #971814;
+}
+
+.active i {
+    color: white;
+}
+
+aside a:hover{
+    background-color: #971814;
+
+}
+
+aside a i{
+    color: #971814;
+    margin-right: 1vw;
+    font-size: 1.4vw;
+}
+
+
+aside a:hover i{
+    color: white;
+}
+
+.hero{
+    width: calc(100vw - 250px);
+    background-color: #D9D9D9;
+    padding: 0 2vw;
+}
+
+
+.dashboard-heading{
+    display: flex;
+    padding: 3vw 0vw;
+    align-items: center;
+    padding-right: 4vw;
+    font-family: Work Sans, sans-serif;
+    color: #363636;
+    justify-content: space-between;
+    /* background-color: rebeccapurple; */
+}
+
+.dashboard-heading a{
+    text-decoration: none;
+    border-radius: 30px ;
+background-color: #E6E6E6;
+/* color: #151414; */
+
+
+padding: .8vw;
+
+font-style: 1.2;
+padding-right: 19vw;
+}
+
+.main-content{
+    box-shadow: -2px 3px 17px -1px rgba(226,234,215,0.63);
+    -webkit-box-shadow: -2px 3px 17px -1px rgba(226,234,215,0.63);
+    -moz-box-shadow: -2px 3px 17px -1px rgba(226,234,215,0.63);
+width: 100%;
+background-color: rebeccapurple;
+min-height: 50%;
+
+}
+
+
+.review-section{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1vw 0;
+}
+
+.review-section .card{
+    width: 275px;
+    height: 90px;
+    /* background-color: red; */
+    border-radius: 10px;
+}
+.icon img{
+    height:40px ;
+}
+
+.hero .card{
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    height: 80px;
+    align-items: center;
+    text-decoration: none;
+}
+
+.review-section .massages{
+    background-color: #007BFF;
+
+}
+
+.review-section .bookmark{
+    background-color: #2DBC4E;
+}
+
+.review-section .star{
+    background-color: #E04B59;
+}
+
+.review-section .booking{
+    background-color: #FFC008;
+}
+
+
+.card .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   width: 30%;
+   height: 100%;
+}
+
+.review-section .massages .icon{
+    background-color: #0062CC;
+}
+
+.review-section .bookmark .icon{
+    background-color: #1E7E34;
+}
+
+.review-section .star .icon{
+    background-color: #BD2130;
+}
+.review-section .booking .icon{
+    background-color: #BA8B00;
+}
+
+
+.review-section h1{
+    width:40% ;
+    font-size: 1.4vw;
 }

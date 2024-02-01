@@ -179,11 +179,11 @@ padding-right: 19vw;
 }
 
 .main-content{
-    box-shadow: -2px 3px 17px -1px rgba(226,234,215,0.63);
-    -webkit-box-shadow: -2px 3px 17px -1px rgba(226,234,215,0.63);
-    -moz-box-shadow: -2px 3px 17px -1px rgba(226,234,215,0.63);
+    -webkit-box-shadow: 1px 3px 14px 0px #000000; 
+    box-shadow: 1px 3px 14px 0px #000000;
+    border: none;
 width: 100%;
-background-color: rebeccapurple;
+background-color: #E6E6E6;
 min-height: 50%;
 
 }
@@ -192,7 +192,7 @@ min-height: 50%;
 .review-section{
     display: flex;
     justify-content: space-evenly;
-    padding: 1vw 0;
+    padding: 3vw 0;
 }
 
 .review-section .card{
@@ -200,7 +200,7 @@ min-height: 50%;
     height: 90px;
     border-radius: 10px;
     display: flex;
-    justify-content:space-between;
+    /* justify-content:space-between; */
     overflow: hidden;
     height: 80px;
     align-items: center;
@@ -256,6 +256,25 @@ min-height: 50%;
 
 
 .review-section h1{
-    width:40% ;
+    width:60% ;
+font-family:sans-serif;
     font-size: 1.4vw;
+    text-align: center;
+}
+
+
+.new-section{
+    padding: 1.5vw;
+    background-color: #DBDBDB;
+    width: 100%;
+height: auto;
+display: flex;
+justify-content: space-between;
+}
+
+.new-section .card{
+min-width: 150px;
+min-height: 120px;
+background-color: red;
+text-decoration: none;
 }
